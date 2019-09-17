@@ -5,17 +5,16 @@ Contact Manager          The name of the website
 SMS                      Short Message Service
 
 Funtional Requirement
-1 Contacts
-1.1 Add function: user should be able to add a phone and person's information to the contact manager.
-1.2 This app should support multiple phone numbers
-1.3 The user should be able to support adding a photo label for a contact
-1.4 The user should be able to search contacts by contact name
-1.5 The user should be able to blacklist (block SMS and Phones), add/view/edit/delete
-1.6 The user should be able to directly make phone calls and send SMS from a contact view
-
-2 Contacts Organization
-2.1 The user should be able to manage contact groups
-2.2 The user should be able to sort contacts by name / group name in alphabetical order
-2.3 The user should be able to find specific letter group by tapping the letter on the screen
-2.4 The user should be able to stick your own info to the top
-2.5 This app will zoom in / out and scroll whenever necessary
+1. Add contacts
+2. View contacts
+3. Edit contatcs
+4. Delete contacts
+5. Adding photo
+6. Search
+7. Block
+8. Call or text
+9. Add groups
+10. Manage groups
+11. Sort
+12. Zoom in/out
+13. Choose phone number
