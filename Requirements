@@ -7,10 +7,10 @@ SMS                      Short Message Service
 Funtional Requirement
 1. Add contacts
 2. View contacts
-3. Edit contatcs
-4. Delete contacts
-5. Adding photo
-6. Search
+3. Edit contacts
+4. Delete contacts - Be able to delete contact information
+5. Adding photo - Be able to add photos for different contacts
+6. Search - Be able to to search for contacts by alphabetical order
 7. Block
 8. Call or text
 9. Add groups
