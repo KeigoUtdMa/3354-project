@@ -8,9 +8,9 @@ Funtional Requirement
 1. Add: The user should be able to add a phone and person's information to the contact manager.
 2. View: The user should be able to view exist contacts in the app.
 3. Edit: The user shoule be able to edit exist contacts in the app.
-4. Delete contacts
-5. Adding photo
-6. Search
+4. Delete contacts: The user should be able to delete contact information.
+5. Adding photo: The user should be able to add photos for different contacts.
+6. Search: The user should be able to search for contacts by contact name.(In Alphabetical Order)
 7. Block
 8. Call or text
 9. Add groups
