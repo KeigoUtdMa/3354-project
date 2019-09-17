@@ -2,6 +2,7 @@ Topic: Contact Manager
 
 Definitions, Acronyms, and Abbreviations
 Contact Manager          The name of the website
+SMS                      Short Message Service
 
 Funtional Requirement
 1 Contacts
@@ -17,4 +18,4 @@ Funtional Requirement
 2.2 Sort contacts by name / group name in alphabetical order
 2.3 Be able to find specific letter group by tapping the letter on the screen
 2.4 Be able to stick your own info to the top
-2.5 
+2.5 Zoom in / out and scroll whenever necessary
