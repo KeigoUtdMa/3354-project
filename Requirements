@@ -1,0 +1,15 @@
+Topic: Contact Manager
+
+                        Funtional Requirement
+1 Contacts
+1.1 The user should be able to add, view, edit, delete contacts.
+1.2 This app should Support multiple phone numbers
+1.3 Support adding a photo label for a contact
+1.4 Search contacts by contact name
+1.5 Blacklist (block SMS and Phones), add/view/edit/delete
+1.6 Directly make phone calls and send SMS from a contact view
+
+2 Contacts Organization
+2.1 Add contact groups
+2.2 Manage contact groups (add/remove contacts)
+2.3 Sort contacts by name / group name
