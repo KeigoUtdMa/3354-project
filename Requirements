@@ -11,8 +11,8 @@ Funtional Requirement
 4. Delete contacts: The user should be able to delete contact information.
 5. Adding photo: The user should be able to add photos for different contacts.
 6. Search: The user should be able to search for contacts by contact name.(In Alphabetical Order)
-7. Block
-8. Call or text
+7. Block: The user should be able to block the one they
+8. Call or text: The user should be able to call or text someone by directly click them in the conatct
 9. Add groups
 10. Manage groups
 11. Sort
