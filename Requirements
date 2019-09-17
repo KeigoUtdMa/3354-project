@@ -5,9 +5,17 @@ Contact Manager          The name of the website
 SMS                      Short Message Service
 
 Funtional Requirement
-1. Add: The user should be able to add a phone and person's information to the contact manager.
+1. Add: The user should be able to add person's information to the contact manager.
+    1.1: User can add a person's name inot the contact manager.
+    1.2: User can add a person's phone number into the contact manager.
+    1.3: User can add a photo as a picture of the contact.
 2. View: The user should be able to view exist contacts in the app.
+    2.1: User can see the person's name in contact manager.
+    2.2: User can see the person's phone number in contact manager and it should appear when user clike the contact tab.
+    2.3: User can view the photo he/she add on the contact and be able to zoom in or zoom out that photo.
 3. Edit: The user shoule be able to edit exist contacts in the app.
+    3.1: User can change the contact's name or phone number.
+    3.2: User can upload a new photo if he/she want to change the photo
 4. Delete contacts: The user should be able to delete contact information.
 5. Adding photo: The user should be able to add photos for different contacts.
 6. Search: The user should be able to search for contacts by contact name.(In Alphabetical Order)
