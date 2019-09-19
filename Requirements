@@ -24,14 +24,15 @@ Funtional Requirement
 9. Add groups: The add contact groups function shall allow users to add a group.
 	9.1 The system shall allow a user to create a new group.
 	9.2 The system shall ask the user for a group name and may ask user for group description and group image.
-	9.3 The system shall allow the user to select group members from the contacts.
-	9.4 The system may allow the user to select group members by phone number.
-		If the phone number is a new contact, the system may allow it to be saved to the contact and store the information in the database. 
+	9.3 The system shall allow the user to select a contact from the existing contacts.
+	9.4 The system shall allow the user to select a contact by searching contact name. 
 10. Manage groups: The manage contact group function shall allow users to add contacts to a group. 
 	10.1 The system shall allow the user to add contacts to the group.
 	10.2 The system shall allow the user to add a contact to the group by selecting from the existing contacts.
 	10.3 The system shall allow the user to add a contact to the group by searching contact name.
-11. Sort: The user should be able to see the contacts in alphabetical order of last name
+11. Sort: The sort contact by group name function shall allow users to sort groups by group name.
+	11.1 The system shall set the default sort order by the time the group is added, which means the latest groups list first.
+	11.2 The system shall allow the user to sort groups in alphabetical order.
 12. Zoom in/out: The user should be able to zoom in or zoom out and scroll whenever necessary
 13. Choose phone number: The user should be able to select phone number they want to message or call
 
