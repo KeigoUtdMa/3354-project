@@ -27,7 +27,10 @@ Funtional Requirement
 	9.3 The system shall allow the user to select group members from the contacts.
 	9.4 The system may allow the user to select group members by phone number.
 		If the phone number is a new contact, the system may allow it to be saved to the contact and store the information in the database. 
-10. Manage groups
+10. Manage groups: The manage contact group function shall allow users to add contacts to a group. 
+	10.1 The system shall allow the user to add contacts to the group.
+	10.2 The system shall allow the user to add a contact to the group by selecting from the existing contacts.
+	10.3 The system shall allow the user to add a contact to the group by searching contact name.
 11. Sort
 12. Zoom in/out: The user should be able to zoom in or zoom out and scroll whenever necessary
 13. Choose phone number: The user should be able to select phone number they want to message or call
