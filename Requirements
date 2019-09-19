@@ -19,7 +19,7 @@ Funtional Requirement
 4. Delete contacts: The user should be able to delete contact information.
 5. Adding photo: The user should be able to add photos for different contacts.
 6. Search: The user should be able to search for contacts by contact name.(In Alphabetical Order)
-7. Block: The user should be able to block the one they
+7. Block: The user should be able to block the one they want
 8. Call or text: The user should be able to call or text someone by directly click them in the conatct
 9. Add groups: The add contact groups function shall allow users to add a group.
 	9.1 The system shall allow a user to create a new group.
@@ -31,7 +31,7 @@ Funtional Requirement
 	10.1 The system shall allow the user to add contacts to the group.
 	10.2 The system shall allow the user to add a contact to the group by selecting from the existing contacts.
 	10.3 The system shall allow the user to add a contact to the group by searching contact name.
-11. Sort
+11. Sort: The user should be able to see the contacts in alphabetical order of last name
 12. Zoom in/out: The user should be able to zoom in or zoom out and scroll whenever necessary
 13. Choose phone number: The user should be able to select phone number they want to message or call
 
