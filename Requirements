@@ -5,36 +5,67 @@ Contact Manager          The name of the website
 SMS                      Short Message Service
 
 Funtional Requirement
-1. Add: The user should be able to add person's information to the contact manager.
-    1.1: User can add a person's name inot the contact manager.
-    1.2: User can add a person's phone number into the contact manager.
-    1.3: User can add a photo as a picture of the contact.
-2. View: The user should be able to view exist contacts in the app.
-    2.1: User can see the person's name in contact manager.
-    2.2: User can see the person's phone number in contact manager and it should appear when user clike the contact tab.
-    2.3: User can view the photo he/she add on the contact and be able to zoom in or zoom out that photo.
-3. Edit: The user shoule be able to edit exist contacts in the app.
-    3.1: User can change the contact's name or phone number.
-    3.2: User can upload a new photo if he/she want to change the photo
-4. Delete contacts: The user should be able to delete contact information.
-5. Adding photo: The user should be able to add photos for different contacts.
-6. Search: The user should be able to search for contacts by contact name.(In Alphabetical Order)
-7. Block: The user should be able to block the one they want
-8. Call or text: The user should be able to call or text someone by directly click them in the conatct
-9. Add groups: The add contact groups function shall allow users to add a group.
-	9.1 The system shall allow a user to create a new group.
-	9.2 The system shall ask the user for a group name and may ask user for group description and group image.
-	9.3 The system shall allow the user to select a contact from the existing contacts.
-	9.4 The system shall allow the user to select a contact by searching contact name. 
-10. Manage groups: The manage contact group function shall allow users to add contacts to a group. 
-	10.1 The system shall allow the user to add contacts to the group.
-	10.2 The system shall allow the user to add a contact to the group by selecting from the existing contacts.
-	10.3 The system shall allow the user to add a contact to the group by searching contact name.
-11. Sort: The sort contact by group name function shall allow users to sort groups by group name.
+1. Contact
+1.1 The add contact function shall allow the user to add a contact.
+	1.1.1 The system shall allow the user to add a new contact.
+	1.1.2 The system shall ask the user for first name, last name, a phone number, a photo when adding a new contact.
+	1.1.3 The system shall allow the user to add multiple phone numbers. (no more than 5)
+	1.1.4 The system may allow the user to add email, company, job title, department, and birthday when adding a new contact.
+
+1.2 The edit contact function shall allow the user to edit a contact.
+	1.2.1 The system shall allow the user to edit the first name, last name, phone number, photo.
+	1.2.2 The system may allow the user to edit email, company, job title, department, and birthday.
+
+1.3 The view contact function shall allow the user to view the contact list.
+	1.3.1 The system shall allow the user to view all the contacts in alphabetical order.
+	1.3.2 The system shall show the contact first name and last name.
+	1.3.3 The system may show the A to Z character in alphabetical order.
+
+1.4 The delete contact function shall allow the user to delete a contact.
+	1.4.1 The system shall allow the user to delete a contact.
+	1.4.2 The system shall delete the contact in a database, and the contact can’t be recovered.
+
+1.5 The adding a photo label function shall allow the user to add a photo for a contact.
+	1.5.1 The system shall allow the user to add one photo for a contact.
+	1.5.2 The system shall allow the user to take a picture for the contact photo.
+	1.5.3 The system shall allow the user to choose a picture from a photo library.
+	1.5.4 The system may allow the user to move or scale the photo to select the part that the user wants to upload.
+
+1.6 The search contacts function shall allow the user to search a contact by a contact name.
+	1.6.1 The system shall match the searching characters with the first and last name of a contact.
+	1.6.2 The system shall display the first and last name of a contact as a searching result.  
+	1.6.2 The system shall display “No Results” if searching characters can’t be matched.
+ 
+1.7 The blacklist function shall allow the user to block phones and SMS.
+	1.7.1 The system shall block the SMS if the user blocks the phones. And the user will not receive any phone call and messages from people on the block list.
+	1.7.2 The system may allow the user to unblock the phones.
+	
+1.8 The make phone calls function shall allow the user to call directly.
+1.9 The send SMS function shall allow the user to send SMS directly.
+
+
+2. Contact Organization
+2.1 The add contact groups function shall allow users to add a group.
+	2.1.1 The system shall allow a user to create a new group.
+	2.1.2 The system shall ask the user for a group name and may ask user for group description and group image.
+	2.1.3 The system shall allow the user to select a contact from the existing contacts.
+	2.1.4 The system shall allow the user to select a contact by searching contact name. 
+	
+2.2 The manage contact group function shall allow users to add contacts to a group. 
+	2.2.1 The system shall allow the user to add contacts to the group.
+	2.2.2 The system shall allow the user to add a contact to the group by selecting from the existing contacts.
+	2.2.3 The system shall allow the user to add a contact to the group by searching contact name.
+	
+2.3 The sort contact by group name function shall allow users to sort groups by group name.
 	11.1 The system shall set the default sort order by the time the group is added, which means the latest groups list first.
 	11.2 The system shall allow the user to sort groups in alphabetical order.
-12. Zoom in/out: The user should be able to zoom in or zoom out and scroll whenever necessary
-13. Choose phone number: The user should be able to select phone number they want to message or call
+
+
+3.Other
+3.1 The zoom in function shall allow the user to magnify the view.
+3.2 The zoom out function shall allow the user to decrease the view.
+3.2 The scroll function shall allow the user to scroll whenever necessary.
+
 
 
 Use Case DiagraM(Link down blow)
