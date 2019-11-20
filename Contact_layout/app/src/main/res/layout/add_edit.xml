@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/addedit_image"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+
+    <EditText
+        android:id="@+id/addedit_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/addedit_firstname_hint"
+        android:inputType="textNoSuggestions|text"
+        android:maxLength="64" />
+
+    <EditText
+        android:id="@+id/addedit_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/addedit_lastname_hint"
+        android:inputType="textNoSuggestions"
+        android:maxLength="64" />
+
+    <EditText
+        android:id="@+id/addedit_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/addedit_phonenumber_hint"
+        android:inputType="phone"
+        android:maxLength="11" />
+
+    <ImageButton
+        android:id="@+id/addedit_addphonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00F8F2F2"
+        android:tint="#009688"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <Button
+        android:id="@+id/addedit_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@android:drawable/ic_menu_save"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:text="@string/addedit_save" />
+
+</LinearLayout>
