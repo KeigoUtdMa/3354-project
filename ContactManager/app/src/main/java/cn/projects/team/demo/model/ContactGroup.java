@@ -1,3 +1,4 @@
+//this is a class for contact group
 package cn.projects.team.demo.model;
 
 import org.greenrobot.greendao.annotation.Entity;
@@ -9,6 +10,7 @@ public class ContactGroup {
     private Long id ;
     private String groupName;
     @Generated(hash = 1960676043)
+    //create new contact group
     public ContactGroup(Long id, String groupName) {
         this.id = id;
         this.groupName = groupName;
@@ -28,4 +30,5 @@ public class ContactGroup {
     public void setGroupName(String groupName) {
         this.groupName = groupName;
     }
+    //return information back to DB
 }
