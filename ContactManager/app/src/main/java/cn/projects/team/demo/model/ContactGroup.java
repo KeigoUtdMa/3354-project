@@ -1,4 +1,5 @@
 //this is a class for contact group
+//contact group will has id and group name
 package cn.projects.team.demo.model;
 
 import org.greenrobot.greendao.annotation.Entity;
