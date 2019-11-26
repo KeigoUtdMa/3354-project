@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.lygttpod:SuperTextView:2.2.4@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperTextView-2.2.4.aar/2f31653b7740db24f1a303bafa3ac60a/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperTextView-2.2.4.aar/2f31653b7740db24f1a303bafa3ac60a/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperTextView-2.2.4.aar/ded56510b14ee5b4ad7b966a330b0b97/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/SuperTextView-2.2.4.aar/ded56510b14ee5b4ad7b966a330b0b97/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.qmuiteam:qmui:1.1.5@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/qmui-1.1.5.aar/7dad1805b34c288f8d36d66c0855f325/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/qmui-1.1.5.aar/0c203fdac552c38e87f53c42054a1dd6/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/qmui-1.1.5.aar/7dad1805b34c288f8d36d66c0855f325/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/qmui-1.1.5.aar/7dad1805b34c288f8d36d66c0855f325/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/qmui-1.1.5.aar/0c203fdac552c38e87f53c42054a1dd6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/qmui-1.1.5.aar/0c203fdac552c38e87f53c42054a1dd6/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
