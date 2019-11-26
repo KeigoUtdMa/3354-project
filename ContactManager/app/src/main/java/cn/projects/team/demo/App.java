@@ -33,11 +33,14 @@ public class App extends Application {
         return instance;
     }
     /**
-     *
+     * set database with the help of greenDao
      */
     private void setDatabase() {
+        // get an object of SQLiteOpenHelper
+        // the default DaoMaster.DevOpenHelper will lost all tables when database upgrade
+
         mHelper = new DaoMaster.DevOpenHelper(this, "notes-db", null);
-        db = mHelper.getWritableDatabase(); 
+        db = mHelper.getWritableDatabase();
         mDaoMaster = new DaoMaster(db);
         mDaoSession = mDaoMaster.newSession();
     }
