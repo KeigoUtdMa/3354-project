@@ -1,0 +1,2 @@
+# Referenced at /Users/SuperNature/Team-ChaoYue/ContactManager_v1.0/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:15
+-keep class cn.projects.team.demo.App { <init>(); }
