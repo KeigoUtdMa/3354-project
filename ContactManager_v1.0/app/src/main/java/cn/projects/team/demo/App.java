@@ -37,7 +37,9 @@ public class App extends Application {
         context = this;
         instance = this;
         setDatabase();
- 
+
+    }
+
     public static Context getContext() {
         return context;
     }
