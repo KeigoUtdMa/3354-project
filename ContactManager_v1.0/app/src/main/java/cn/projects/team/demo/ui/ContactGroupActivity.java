@@ -49,7 +49,9 @@ public class ContactGroupActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(manager);
 
 
-        // 添加长按点击弹出选择菜单
+        /**
+         *long-pressing group name to edit and delete group
+         */
         mRecyclerView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
             public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                 menu.add(0, 1, 0, "Edit Group");
@@ -109,22 +111,22 @@ public class ContactGroupActivity extends AppCompatActivity {
     public boolean onContextItemSelected(MenuItem item) {
         // TODO Auto-generated method stub
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
-        //info.id得到listview中选择的条目绑定的id
-        String id = String.valueOf(info.position);//得到选中的索引
-        ContactGroup contact = this.mDateList.get(Integer.parseInt(id));//得到选中的Contacts对象
+        //info.id gets the id of chosen item in the listview
+        String id = String.valueOf(info.position);//get the chosen position
+        ContactGroup contact = this.mDateList.get(Integer.parseInt(id));//get the chosen contact
         //  Log.e("contact",contact.toString());
 
         switch (item.getItemId()) {
             case 1:
-                // Toast.makeText(this, "修改",Toast.LENGTH_SHORT).show();
-                //携带数据跳转到修改联系人界面
+                // Toast.makeText(this, "edit",Toast.LENGTH_SHORT).show();
+                // go to the edit view
                 Intent intent = new Intent(this, AddContactGroupActivity.class);
                 intent.putExtra("id", contact.getId());
                 startActivity(intent);
 
                 break;
-            case 2://删除联系人
-                Toast.makeText(this, "delete success", Toast.LENGTH_SHORT).show();
+            case 2://delete contact
+                Toast.makeText(this, "delete successfully", Toast.LENGTH_SHORT).show();
                 ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
                 contactDao.deleteByKey(contact.getId());
                 getData();
