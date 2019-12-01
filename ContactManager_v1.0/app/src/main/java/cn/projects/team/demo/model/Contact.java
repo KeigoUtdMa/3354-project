@@ -1,3 +1,5 @@
+//This is the contact object class
+//Contact class will store information from data base of user input.
 package cn.projects.team.demo.model;
 
 import org.greenrobot.greendao.annotation.Entity;
@@ -18,6 +20,7 @@ public class Contact {
     private String letters;
     private Integer groupId;
     private Boolean isBlack;
+    //a person contact will has those options above to chose.
     @Generated(hash = 761606915)
     public Contact(Long id, String name, String phone1, String phone2,
             String phone3, String icon, String letters, Integer groupId,
@@ -89,7 +92,7 @@ public class Contact {
     public void setIsBlack(Boolean isBlack) {
         this.isBlack = isBlack;
     }
-    
+    //set and return variable.
 
 
 }
