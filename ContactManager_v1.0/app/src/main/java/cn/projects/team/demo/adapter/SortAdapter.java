@@ -1,3 +1,4 @@
+//This class will sort the list of item by acsii value of char.
 package cn.projects.team.demo.adapter;
 
 import android.content.Context;
@@ -29,6 +30,7 @@ public class SortAdapter extends RecyclerView.Adapter<SortAdapter.ViewHolder> {
     }
 
     @Override
+    //Create a new view 
     public SortAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mInflater.inflate(R.layout.item_name, parent,false);
         ViewHolder viewHolder = new ViewHolder(view);
@@ -63,6 +65,7 @@ public class SortAdapter extends RecyclerView.Adapter<SortAdapter.ViewHolder> {
     }
 
     @Override
+    //count the total number of item and return as size of the list.
     public int getItemCount() {
         return mData.size();
     }
