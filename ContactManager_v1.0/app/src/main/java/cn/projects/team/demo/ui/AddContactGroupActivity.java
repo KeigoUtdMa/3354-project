@@ -1,3 +1,5 @@
+//This is a class for the add group avtivit page.
+//This class will let user creates a new group by click a button.
 package cn.projects.team.demo.ui;
 
 import android.os.Bundle;
@@ -28,30 +30,32 @@ public class AddContactGroupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_group);
         name = findViewById(R.id.name);
         long id = getIntent().getLongExtra("id", 0);
+        //A group will has a name and id
         SuperButton sb_add =  findViewById(R.id.sb_add);
         toolbar_title = findViewById(R.id.toolbar_title);
-        sb_add.setOnClickListener(new View.OnClickListener() {
+        sb_add.setOnClickListener(new View.OnClickListener() {//a listener will listen the click then ask user for input
             @Override
             public void onClick(View v) {
                 String nameStr = name.getText().toString();
                 if(TextUtils.isEmpty(nameStr)){
-
                     Toast.makeText(AddContactGroupActivity.this, "Please enter group name", Toast.LENGTH_SHORT).show();
                     return ;
                 }
                 ContactGroup group = new ContactGroup();
+                //this group is a new ContactGroup object
                 group.setGroupName(nameStr);
                 ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
                 if(0!=id){
                     group.setId(id);
                     contactDao.update(group);
+                    //If group exist, the system will update the group information.
                 }else{
                     contactDao.insert(group);
                 }
             finish();
             }
         });
-
+        //Editing group paga
         if(0!=id){
             toolbar_title.setText("Edit Group");
             ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
