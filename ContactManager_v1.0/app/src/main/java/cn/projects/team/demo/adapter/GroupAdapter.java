@@ -1,3 +1,4 @@
+//This is an adapter class to help group to store in database and push to display page
 package cn.projects.team.demo.adapter;
 
 import android.content.Context;
