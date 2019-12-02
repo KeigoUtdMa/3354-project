@@ -1,3 +1,4 @@
+//This is the class for adding contacts
 package cn.projects.team.demo.ui;
 
 import android.Manifest;
@@ -59,7 +60,7 @@ public class AddContactsActivity extends AppCompatActivity implements EasyPermis
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_contact);
-//Define variables and components
+//define some variables
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
@@ -84,7 +85,7 @@ public class AddContactsActivity extends AppCompatActivity implements EasyPermis
             }
         });
 
-        // Use add button to add a new contact
+        // click the add button to add a new contact
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -150,7 +151,7 @@ public class AddContactsActivity extends AppCompatActivity implements EasyPermis
     }
 
 
-    //set group
+    //select the group for the new contact
     public void setSpinnerAdapter()
     {
         ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
@@ -182,7 +183,7 @@ public class AddContactsActivity extends AppCompatActivity implements EasyPermis
         });
     }
 
-    //set choose a photo
+    //choose the profile photo for the new contact
     @AfterPermissionGranted(PRC_PHOTO_PICKER)
     private void choicePhotoWrapper() {
         String[] perms = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
