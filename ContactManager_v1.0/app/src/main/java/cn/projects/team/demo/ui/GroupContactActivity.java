@@ -59,8 +59,9 @@ public class GroupContactActivity extends AppCompatActivity  {
             super.onCreate(savedInstanceState);
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
             setContentView(R.layout.activity_main);
-
+            //delcare groupId
             groupId = getIntent().getLongExtra("groupId", 0);
+            //create toolbar object and set it
             Toolbar toolbar = findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
             getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -110,6 +111,7 @@ public class GroupContactActivity extends AppCompatActivity  {
             //click long-press to get menu
             mRecyclerView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
                 public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+                // for menu each option, enter different method name into context menu
                     menu.add(0, 1, 0, "Edit Contact");
                     menu.add(0, 2, 0, "Delete Contact");
                     menu.add(0, 3, 0, "Call");
@@ -172,6 +174,7 @@ public class GroupContactActivity extends AppCompatActivity  {
 
                     break;
                 case 2:
+                    //ouput "delete success"when delete a contact
                     Toast.makeText(this, "delete success", Toast.LENGTH_SHORT).show();
 
                     ContactDao contactDao = App.getInstance().getDaoSession().getContactDao();
@@ -249,10 +252,10 @@ public class GroupContactActivity extends AppCompatActivity  {
 
             for (int i = 0; i < date.size(); i++) {
                 Contact sortModel = new Contact();
-                sortModel.setName(date.get(i).getName());
-                sortModel.setPhone3(date.get(i).getPhone3());
-                sortModel.setPhone1(date.get(i).getPhone1());
-                sortModel.setPhone2(date.get(i).getPhone2());
+                sortModel.setName(date.get(i).getName()); // name
+                sortModel.setPhone3(date.get(i).getPhone3()); // tel
+                sortModel.setPhone1(date.get(i).getPhone1()); // phone1
+                sortModel.setPhone2(date.get(i).getPhone2()); // phone2
                 sortModel.setIcon(date.get(i).getIcon());
                 sortModel.setId(date.get(i).getId());
                 //change chinese to pinyin to set the order
@@ -287,6 +290,7 @@ public class GroupContactActivity extends AppCompatActivity  {
                 filterDateList.clear();
                 for (Contact sortModel : mDateList) {
                     String name = sortModel.getName();
+                        // search name and shows contact when it is matched
                     if (name.indexOf(filterStr.toString()) != -1 ||
                             PinyinUtils.getFirstSpell(name).startsWith(filterStr.toString())
                             || PinyinUtils.getFirstSpell(name).toLowerCase().startsWith(filterStr.toString())
