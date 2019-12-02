@@ -44,12 +44,15 @@ public class AddContactGroupActivity extends AppCompatActivity {
                 ContactGroup group = new ContactGroup();
                 //this group is a new ContactGroup object
                 group.setGroupName(nameStr);
+                //nameStr becomes GroupName
                 ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
+                //Creat new group object
                 if(0!=id){
                     group.setId(id);
                     contactDao.update(group);
                     //If group exist, the system will update the group information.
                 }else{
+                    //If group does not exist, the system will insert a new group in systemn
                     contactDao.insert(group);
                 }
             finish();
