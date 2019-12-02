@@ -48,7 +48,6 @@ public class ContactGroupActivity extends AppCompatActivity {
         manager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(manager);
 
-
         /**
          *long-pressing group name to edit and delete group
          */
@@ -95,9 +94,7 @@ public class ContactGroupActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+ 
         int id = item.getItemId();
 
         Intent intent = new Intent(ContactGroupActivity.this,AddContactGroupActivity.class) ;
@@ -119,13 +116,13 @@ public class ContactGroupActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case 1:
                 // Toast.makeText(this, "edit",Toast.LENGTH_SHORT).show();
-                // go to the edit view
+                // Edit an existing contact
                 Intent intent = new Intent(this, AddContactGroupActivity.class);
                 intent.putExtra("id", contact.getId());
                 startActivity(intent);
 
                 break;
-            case 2://delete contact
+            case 2://Delete a contact
                 Toast.makeText(this, "delete successfully", Toast.LENGTH_SHORT).show();
                 ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
                 contactDao.deleteByKey(contact.getId());

@@ -59,6 +59,7 @@ public class AddContactsActivity extends AppCompatActivity implements EasyPermis
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_contact);
+//Define variables and components
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
@@ -75,7 +76,7 @@ public class AddContactsActivity extends AppCompatActivity implements EasyPermis
         setSpinnerAdapter();
 
 
-        // set click photo
+        // Click the photo button to take photo
         setAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,7 +84,7 @@ public class AddContactsActivity extends AppCompatActivity implements EasyPermis
             }
         });
 
-        // set add button
+        // Use add button to add a new contact
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
