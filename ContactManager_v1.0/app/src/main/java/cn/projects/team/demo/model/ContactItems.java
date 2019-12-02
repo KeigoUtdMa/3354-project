@@ -1,3 +1,4 @@
+//This class will list the items a contact has.
 package cn.projects.team.demo.model;
 
 import java.io.Serializable;
