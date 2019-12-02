@@ -1,3 +1,4 @@
+//this is the class that allow user to add or remove contacts in the group
 package cn.projects.team.demo.ui;
 
 import android.content.DialogInterface;
@@ -97,7 +98,7 @@ public class GroupContactActivity extends AppCompatActivity  {
             List<Contact> contacts = filledData(list);
             mDateList = contacts;
 
-            // sort contact accodring a-z
+            // sort the contact according to the aplhabetic order a-z
             Collections.sort(mDateList, mComparator);
 
             //set manager in RecyclerView
@@ -106,7 +107,7 @@ public class GroupContactActivity extends AppCompatActivity  {
             mRecyclerView.setLayoutManager(manager);
 
 
-            // long-press to get menu
+            //click long-press to get menu
             mRecyclerView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
                 public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                     menu.add(0, 1, 0, "Edit Contact");
@@ -129,7 +130,7 @@ public class GroupContactActivity extends AppCompatActivity  {
 
             mClearEditText = (ClearEditText) findViewById(R.id.filter_edit);
 
-            //search based on the input
+            //searching based on the input
             mClearEditText.addTextChangedListener(new TextWatcher() {
 
                 @Override
@@ -254,7 +255,7 @@ public class GroupContactActivity extends AppCompatActivity  {
                 sortModel.setPhone2(date.get(i).getPhone2());
                 sortModel.setIcon(date.get(i).getIcon());
                 sortModel.setId(date.get(i).getId());
-                //change chinese to pinyin
+                //change chinese to pinyin to set the order
                 String pinyin = PinyinUtils.getPingYin(date.get(i).getName());
                 String sortString = pinyin.substring(0, 1).toUpperCase();
 
@@ -309,13 +310,11 @@ public class GroupContactActivity extends AppCompatActivity  {
             filterData("",type);
         }
 
-
-        //make a phone call
+        //mamke a phone call
         private void showPhones(Contact contact)
         {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(this,android.R.style.Theme_Holo_Light_Dialog);
-            //builder.setIcon(R.drawable.ic_launcher);
             builder.setTitle("Select a number");
             //    show the phone number items
             final String[] phones = {contact.getPhone1(), null==contact.getPhone2() ?"":contact.getPhone2(), null==contact.getPhone3() ?"":contact.getPhone3()};
