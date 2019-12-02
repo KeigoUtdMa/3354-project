@@ -154,6 +154,7 @@ public class AddContactsActivity extends AppCompatActivity implements EasyPermis
     //select the group for the new contact
     public void setSpinnerAdapter()
     {
+        //Create Contact Group object
         ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
         listGroup = contactDao.queryBuilder().list();
         group.add("Please select a group");
