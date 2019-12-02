@@ -80,8 +80,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViews() {
         mComparator = new PinyinComparator();
-
+        //create comparator
         mSideBar = (WaveSideBar) findViewById(R.id.sideBar);
+        //create sidebar object
 
         ////set the sidebar on the right
         mSideBar.setOnTouchLetterChangeListener(new WaveSideBar.OnTouchLetterChangeListener() {
@@ -89,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
             public void onLetterChange(String letter) {
                 // //get the position of the letter
                 int position = mAdapter.getPositionForSection(letter.charAt(0));
+                // if position does not set up scroll to zero
                 if (position != -1) {
                     manager.scrollToPositionWithOffset(position, 0);
                 }
