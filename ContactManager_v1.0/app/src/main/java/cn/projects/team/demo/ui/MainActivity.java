@@ -1,3 +1,4 @@
+//this is the main class 
 package cn.projects.team.demo.ui;
 
 import android.content.DialogInterface;
@@ -96,12 +97,12 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView = (RecyclerViewImplementsContextMenu) findViewById(R.id.rv);
         ContactDao contactDao = App.getInstance().getDaoSession().getContactDao();
-        //query all contacts
+        //query all of the contacts
         List<Contact> list = contactDao.queryBuilder().where(ContactDao.Properties.IsBlack.eq(false)).list();
         List<Contact> contacts = filledData(list);
         mDateList = contacts;
 
-        // sort contacts from a-z
+        // sort contacts in alphabetic order according to a-z
         Collections.sort(mDateList, mComparator);
 
         //set RecyclerView manager
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(manager);
 
 
-        // long-press to get menu
+        // click long-press to get menu
         mRecyclerView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
             public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
                 menu.add(0, 1, 0, "Edit Contact");
@@ -131,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
 
         mClearEditText = (ClearEditText) findViewById(R.id.filter_edit);
 
-        ////search based on the input
+        //search based on the input
         mClearEditText.addTextChangedListener(new TextWatcher() {
 
             @Override
