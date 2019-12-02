@@ -1,3 +1,4 @@
+//this is the class that allow user to create or delete a contact group
 package cn.projects.team.demo.ui;
 
 import android.content.Intent;
@@ -106,23 +107,23 @@ public class ContactGroupActivity extends AppCompatActivity {
 
     @Override
     public boolean onContextItemSelected(MenuItem item) {
-        // TODO Auto-generated method stub
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
         //info.id gets the id of chosen item in the listview
-        String id = String.valueOf(info.position);//get the chosen position
-        ContactGroup contact = this.mDateList.get(Integer.parseInt(id));//get the chosen contact
-        //  Log.e("contact",contact.toString());
+        //get the chosen position
+        String id = String.valueOf(info.position);
+        //get the chosen contact
+        ContactGroup contact = this.mDateList.get(Integer.parseInt(id));
 
         switch (item.getItemId()) {
             case 1:
-                // Toast.makeText(this, "edit",Toast.LENGTH_SHORT).show();
                 // Edit an existing contact
                 Intent intent = new Intent(this, AddContactGroupActivity.class);
                 intent.putExtra("id", contact.getId());
                 startActivity(intent);
 
                 break;
-            case 2://Delete a contact
+            case 2:
+                //delete a contact
                 Toast.makeText(this, "delete successfully", Toast.LENGTH_SHORT).show();
                 ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
                 contactDao.deleteByKey(contact.getId());
