@@ -54,6 +54,7 @@ public class ContactGroupActivity extends AppCompatActivity {
          */
         mRecyclerView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
             public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+                //add edit and delete group option in context menu
                 menu.add(0, 1, 0, "Edit Group");
                 menu.add(0, 2, 0, "Delete Group");
 
@@ -69,7 +70,6 @@ public class ContactGroupActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
         getData();
     }
 
@@ -102,7 +102,7 @@ public class ContactGroupActivity extends AppCompatActivity {
         //start intent object
         startActivity(intent);
 
-
+        //if user click option return the super class which is for the option
         return super.onOptionsItemSelected(item);
     }
 
