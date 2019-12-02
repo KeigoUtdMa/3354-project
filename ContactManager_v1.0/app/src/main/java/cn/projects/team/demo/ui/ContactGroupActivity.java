@@ -97,8 +97,9 @@ public class ContactGroupActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
  
         int id = item.getItemId();
-
+        //create new intent object
         Intent intent = new Intent(ContactGroupActivity.this,AddContactGroupActivity.class) ;
+        //start intent object
         startActivity(intent);
 
 
@@ -115,6 +116,7 @@ public class ContactGroupActivity extends AppCompatActivity {
         ContactGroup contact = this.mDateList.get(Integer.parseInt(id));
 
         switch (item.getItemId()) {
+                //if contatc exist
             case 1:
                 // Edit an existing contact
                 Intent intent = new Intent(this, AddContactGroupActivity.class);
