@@ -1,5 +1,5 @@
-//This is a class for the add group avtivit page.
-//This class will let user creates a new group by click a button.
+//This is the class for the adding contact group
+
 package cn.projects.team.demo.ui;
 
 import android.os.Bundle;
@@ -55,7 +55,7 @@ public class AddContactGroupActivity extends AppCompatActivity {
             finish();
             }
         });
-        //Editing group paga
+        //editing group page
         if(0!=id){
             toolbar_title.setText("Edit Group");
             ContactGroupDao contactDao = App.getInstance().getDaoSession().getContactGroupDao();
