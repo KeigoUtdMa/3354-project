@@ -1,0 +1,90 @@
+//Test class for ContactDao.java
+//location in Team-ChaoYue/ContactManager_v1.0/app/src/main/java/cn/projects/team/demo/greendao/ContactDao.java
+package com.ContactManager.tests;
+
+import app.content.ContentProvider;
+import app.content.OperationApplication;
+import app.os.RemoteException;
+
+import app.content.database.ContactDao;
+import app.content.model.SimCard;
+import app.content.model.SimContact;
+import app.content.model.account.AccountWithDataSet;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+/**
+ * Fake implementation of ContactDao for testing
+ */
+public class FakeSimContactDao extends ContactDao {
+
+    public boolean canReadSimContacts = true;
+    public List<SimCard> simCards;
+    public Map<SimCard, ArrayList<SimContact>> simContacts;
+    public ContentProviderResult[] importResult;
+    public Map<AccountWithDataSet, Set<SimContact>> existingSimContacts;
+
+    public FakeSimContactDao() {
+        simCards = new ArrayList<>();
+        simContacts = new HashMap<>();
+        importResult = new ContentProviderResult[0];
+        existingSimContacts = new HashMap<>();
+    }
+    @Override
+    public boolean canReadSimContacts() {
+        return canReadSimContacts;
+    }
+    @Override
+    public List<SimCard> getSimCards() {
+        return simCards;
+    }
+    @Override
+    public ArrayList<SimContact> loadContactsForSim(SimCard sim) {
+        return simContacts.get(sim);
+    }
+    @Override
+    public ContentProviderResult[] importContacts(List<SimContact> contacts,
+            AccountWithDataSet targetAccount)
+            throws RemoteException, OperationApplicationException {
+        return importResult;
+    }
+    @Override
+    public void persistSimStates(List<SimCard> simCards) {
+        this.simCards = simCards;
+    }
+    @Override
+    public SimCard getSimBySubscriptionId(int subscriptionId) {
+        if (subscriptionId == SimCard.NO_SUBSCRIPTION_ID) {
+            return simCards.get(0);
+        }
+        for (SimCard sim : simCards) {
+            if (sim.getSubscriptionId() == subscriptionId) {
+                return sim;
+            }
+        }
+        return null;
+    }
+    @Override
+    public Map<AccountWithDataSet, Set<SimContact>> findAccountsOfExistingSimContacts(
+            List<SimContact> contacts) {
+        return existingSimContacts;
+    }
+    public FakeSimContactDao addSim(SimCard sim, SimContact... contacts) {
+        simCards.add(sim);
+        simContacts.put(sim, new ArrayList<>(Arrays.asList(contacts)));
+        return this;
+    }
+    public static FakeSimContactDao singleSimWithContacts(SimCard sim, SimContact... contacts) {
+        return new FakeSimContactDao().addSim(sim, contacts);
+    }
+    public static FakeSimContactDao noSim() {
+        FakeSimContactDao result = new FakeSimContactDao();
+        result.canReadSimContacts = false;
+        return result;
+    }
+}
