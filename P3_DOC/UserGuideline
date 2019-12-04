@@ -5,62 +5,62 @@ Team – ChaoYue
                                             User Guideline of Contact Manager
 
 Start the program/Add a person in Contact Manager
-1.	Download the program from Github.
-2.	To start this program, you can click the icon of contact manager in you cell phone, if you are running virtual derive on 
+1.Download the program from Github.
+2.To start this program, you can click the icon of contact manager in you cell phone, if you are running virtual derive on 
     android studio, the application will starts automatically.
-3.	Once you open the application, you will see the display page of contact manager, if this is your first time use this app,
+3.Once you open the application, you will see the display page of contact manager, if this is your first time use this app,
     you will see blank page under the search bar.
-4.	You can add a new contact person by press the “+” button at the down right corner, after press, an “add new contact” page 
+4.You can add a new contact person by press the “+” button at the down right corner, after press, an “add new contact” page 
     will pops up on the screen. You can input the contact name, 3 phone numbers, and place them into groups.
-5.	After you input the informations you need, you can press the “Add” button on the bottom of the screen, information will 
+5.After you input the informations you need, you can press the “Add” button on the bottom of the screen, information will 
     saved in the local data base.
 6.	Go back to the home page, you will see the contact you created appears on the home page.
 
 Search a person in Contact Manager
-1.	Open the application, you will see the home screen of contact manager, at the top of screen, you can see there is a search 
+1.Open the application, you will see the home screen of contact manager, at the top of screen, you can see there is a search 
     bar for person’s name search.
-2.	Click the search bar, you can type the person’s name you want to search, if the name you type in  is exits on the contact 
+2.Click the search bar, you can type the person’s name you want to search, if the name you type in  is exits on the contact 
     manager, the contact name will appears underneath the search bar and sort by alphabetical order.
-3.	If the name you type in is not in the contact manager, there will be blank space underneath. If you accidentally type a 
+3.If the name you type in is not in the contact manager, there will be blank space underneath. If you accidentally type a 
     wrong letter, you will need to delete all letters you type in and retype the name.
-4.	You can also use the alphabets list in the right of the screen to search the contact, you can simply press the first alpha
+4.You can also use the alphabets list in the right of the screen to search the contact, you can simply press the first alpha
     letter of person’s first name, then all the people’s first name that start with that letter will appear on screen.
 
 Editing a person’s information in Contact Manager 
-1.	Find the contact person you want to edit through the list or use the search. In order to edit a person’s information, this 
+1.Find the contact person you want to edit through the list or use the search. In order to edit a person’s information, this 
     person’s contact information has to be saved on contact manager in the first place. 
-2.	Long press the person’s name, you will see a list of option appear on the right. Select “edit this contact”, then you are 
+2.Long press the person’s name, you will see a list of option appear on the right. Select “edit this contact”, then you are 
     in the contact information page.
-3.	After you finish your changes, you can press the “save” button on the bottom of the screen, once you press it, all changes
+3.After you finish your changes, you can press the “save” button on the bottom of the screen, once you press it, all changes
     will save in the local database.
-4.	Go back to the home page, you will see the informations have been changed.
+4.Go back to the home page, you will see the informations have been changed.
 
 Group a person
-1.	If you would like to group a person, you can long press the person’s name, and press the “edit” button.
-2.	Now you are in the contact information page, scroll down, you will see the chose bar say “Please select a group”.
-3.	Press the chose bar, then you will see a list of option on the bottom.
-4.	Chose the group you want to save. Click “save” button to save your change
+1.If you would like to group a person, you can long press the person’s name, and press the “edit” button.
+2.Now you are in the contact information page, scroll down, you will see the chose bar say “Please select a group”.
+3.Press the chose bar, then you will see a list of option on the bottom.
+4.Chose the group you want to save. Click “save” button to save your change
 
 Delete a contact
-1.	Find the contact person you would like to delete. In order to delete a person’s information, this person’s contact 
+1.Find the contact person you would like to delete. In order to delete a person’s information, this person’s contact 
     information has to be saved on contact manager in first place.
-2.	Long press the person’s name, you will see a list of option to the right, click “Delete”.
-3.	Back to the home page, you will see the person’s contact is disappeared since you already delete the information in the 
+2.Long press the person’s name, you will see a list of option to the right, click “Delete”.
+3.Back to the home page, you will see the person’s contact is disappeared since you already delete the information in the 
     local database.
 Whitelist and blacklist in Contact Manager
-1.	In the Contact Manager, there are two lists, one is whitelist(home page) and another one is blacklist. A contact person 
+1.In the Contact Manager, there are two lists, one is whitelist(home page) and another one is blacklist. A contact person 
     will be in the whitelist by default after you add the contact information to the app.
-2.	If you want to move a person to the blacklist, you can long press the person’s name, then click “Move to blacklist” option
+2.If you want to move a person to the blacklist, you can long press the person’s name, then click “Move to blacklist” option
     on the right.
-3.	Move to the up right corner, press the option button, there is a “blacklist” option.
-4.	Press the “blacklist” option, then you will be in the blacklist page, you can see all the people that you moved to the 
+3.Move to the up right corner, press the option button, there is a “blacklist” option.
+4.Press the “blacklist” option, then you will be in the blacklist page, you can see all the people that you moved to the 
     blacklist.
-5.	If you want to move a person out of blacklist, long press the person’s name in the blacklist, then click “Move out 
+5.If you want to move a person out of blacklist, long press the person’s name in the blacklist, then click “Move out 
     blacklist” option to the right.
-6.	Back to home page, you will see the person’s contact information shows up again on the default page.
+6.Back to home page, you will see the person’s contact information shows up again on the default page.
 
 Call and SMS message
-1.	Long press the person’s name, you can see “call” and “message” option to the right.
-2.	Press any action you would like to do, then you will jump to call page or SMS message page.
+1.Long press the person’s name, you can see “call” and “message” option to the right.
+2.Press any action you would like to do, then you will jump to call page or SMS message page.
 
 
