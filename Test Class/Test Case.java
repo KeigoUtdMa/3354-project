@@ -1,3 +1,5 @@
+//This is the test class for the method public Contact readEntity(Cursor cursor, int offset)
+//in the file ContactDao.java
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
