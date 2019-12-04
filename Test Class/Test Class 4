@@ -1,0 +1,33 @@
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.Assert;
+
+public class filledDataUnitTest {
+	
+	@Before
+	Contact Kiego = new Contact("0", "Kiego", "123", "456", "789", "icon", "letters", "30", false);
+	Contact Robert = new Contact("1", "Robert", "321", "654", "987", "icon", "letters", "40", false);
+	Contact Steven = new Contact("2", "Steven", "135", "246", "357", "icon", "letters", "50", false);
+	Contact Alan = new Contact("3", "Alan", "000", "111", "222", "icon", "letters", "60", false);
+	Contact Abel = new Contact("4", "Abel", "333", "444", "555", "icon", "letters", "70", false);
+	Contact Aden = new Contact("5", "Aden", "666", "777", "888", "icon", "letters", "80", false);
+	Contact Adam = new Contact("6", "Adam", "999", "", "", "icon", "letters", "90", false);
+	
+	@Test
+	//The method should sort contacts by names in alphabetical order
+	public void test1() {
+		ArrayList<Contact> origincontactlist = {Robert.getname(), Steven.getname(), Kiego.getname()};
+		ArrayList<Contact> expectcontactlist = {Kiego.getname(), Robert.getname(), Steven.getname()};
+		filledData(origincontactlist);
+		assertArrayEquals(expectcontactlist, origincontactlist);
+	}
+	
+	@Test
+	//When the first alphabet is the same then start comparing the second alphabet
+	public void test2() {
+		ArrayList<Contact> origincontactlist = {Alan.getname(), Abel.getname(), Aden.getname(), Adam.getname()};
+		ArrayList<Contact> expectcontactlist = {Abel.getname(), Adam.getname(), Aden.getname(), Alan.getname()};
+		filledData(origincontactlist);
+		assertArrayEquals(expectcontactlist, origincontactlist);
+	}
+	
