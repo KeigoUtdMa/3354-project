@@ -18,7 +18,7 @@ import java.util.List;
 import cn.droidlover.xdroidmvp.demo.R;
 import cn.projects.team.demo.model.Contact;
 import cn.projects.team.demo.model.ContactGroup;
-//import cn.projects.team.demo.ui.GroupContactActivity;
+import cn.projects.team.demo.ui.GroupContactActivity;
 
 public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> {
 
@@ -60,10 +60,10 @@ public class GroupAdapter extends RecyclerView.Adapter<GroupAdapter.ViewHolder> 
         holder.tvName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(mContext, mData.get(position).getName(),Toast.LENGTH_SHORT).show();
-//                Intent intent = new Intent(mContext,GroupContactActivity.class);
-//                intent.putExtra("groupId",mData.get(position).getId());
-//                mContext.startActivity(intent);
+              //  Toast.makeText(mContext, mData.get(position).getName(),Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(mContext,GroupContactActivity.class);
+                intent.putExtra("groupId",mData.get(position).getId());
+                mContext.startActivity(intent);
             }
         });
 
