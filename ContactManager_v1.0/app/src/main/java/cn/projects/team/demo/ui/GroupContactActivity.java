@@ -117,7 +117,7 @@ public class GroupContactActivity extends AppCompatActivity  {
                     menu.add(0, 3, 0, "Call");
                     menu.add(0, 4, 0, "Send SMS");
                     menu.add(0, 5, 0, "Add to blacklist");
-                    menu.add(0, 7, 0, "Move out Group");
+                    menu.add(0, 7, 0, "Remove from Group");
 
                 }
             });
@@ -175,7 +175,7 @@ public class GroupContactActivity extends AppCompatActivity  {
                     break;
                 case 2:
                     //ouput "delete success"when delete a contact
-                    Toast.makeText(this, "delete success", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "delete successfully", Toast.LENGTH_SHORT).show();
 
                     ContactDao contactDao = App.getInstance().getDaoSession().getContactDao();
                     contactDao.deleteByKey(contact.getId());
